@@ -26,7 +26,7 @@ sudo apt-get install nmap
 3. Verifica la instalación ejecutando nmap --version en la Terminal.
 nal.
 
---- Personalización:
+--- Personalización --- <br>
 Puedes cambiar el rango de IPs a escanear modificando la variable ip_range en el archivo network_scan.py: <br>
 ip_range = '192.168.1.0/24'
 
