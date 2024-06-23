@@ -38,4 +38,4 @@ Las contribuciones son bienvenidas. Por favor, abre un issue o envía un pull re
 
 Si tienes alguna pregunta o necesitas ayuda adicional, no dudes en abrir un issue en este repositorio.
 
-Usa este script de forma responsable y legal.
+Usa este script de forma responsable y legal, no seas merluzo!
