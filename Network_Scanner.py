@@ -34,7 +34,7 @@ def scan_network(ip_range):
                         print(f"\n[VULNERABILIDAD] {script}:\n{nm[host][proto][port]['script'][script]}")
 
 if __name__ == "__main__":
-    # Rango de IPs a escanear (puedes cambiarlo por el rango que desees)
+    # Rango de IPs a escanear (puedes cambiarlo por el rango que desees, o dejarlo como está, a mí plim)
     ip_range = '192.168.1.0/24'
     
     scan_network(ip_range)
