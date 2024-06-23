@@ -37,4 +37,5 @@ if __name__ == "__main__":
     # Rango de IPs a escanear (puedes cambiarlo por el rango que desees)
     ip_range = '192.168.1.0/24'
     
-    scan_network(ip_range)    
+    scan_network(ip_range)
+        
