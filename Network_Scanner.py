@@ -1,7 +1,7 @@
 import nmap
 
 def scan_network(ip_range):
-    # Crear un objeto de escáner
+    # Crear un objeto de escáner:
     nm = nmap.PortScanner()
     
     # Escanear el rango de IPs con detección de versiones y vulnerabilidades
@@ -38,5 +38,3 @@ if __name__ == "__main__":
     ip_range = '192.168.1.0/24'
     
     scan_network(ip_range)
-        
-  
