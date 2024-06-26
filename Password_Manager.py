@@ -4,7 +4,7 @@ import base64
 import json
 from getpass import getpass
 
-# Función para generar una nueva clave maestra y guardarla en un archivo, m
+# Función para generar una nueva clave maestra y guardarla en un archivo
 def generate_master_key():
     key = Fernet.generate_key()
     with open("master.key", "wb") as key_file:
