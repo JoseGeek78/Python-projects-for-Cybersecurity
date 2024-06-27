@@ -10,7 +10,7 @@ def generate_master_key():
     with open("master.key", "wb") as key_file:
         key_file.write(key)
 
-# Función para cargar la clave maestra desde un archivo
+# Función para cargar la clave maestra desde un archivo mm
 def load_master_key():
     return open("master.key", "rb").read()
 
