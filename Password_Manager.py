@@ -88,4 +88,4 @@ def main():
             print("Opción no válida, intenta de nuevo.")
 
 if __name__ == "__main__":
-    main()
+    main()mnimni
