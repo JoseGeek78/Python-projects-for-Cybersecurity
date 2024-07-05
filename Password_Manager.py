@@ -92,4 +92,4 @@ if __name__ == "__main__":
     
     
     
-    ect ect e
+    ect 
