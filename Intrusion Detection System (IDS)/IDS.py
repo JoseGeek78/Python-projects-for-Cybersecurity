@@ -1,4 +1,5 @@
-
+# pip install scapy
+# pip install requests
 
 
 from scapy.all import sniff, IP, TCP, UDP
