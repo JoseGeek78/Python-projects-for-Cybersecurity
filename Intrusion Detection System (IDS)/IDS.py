@@ -72,4 +72,3 @@ def packet_callback(packet):
 # Iniciar la captura de paquetes
 print("Iniciando IDS...")
 sniff(prn=packet_callback, store=0)
-k
