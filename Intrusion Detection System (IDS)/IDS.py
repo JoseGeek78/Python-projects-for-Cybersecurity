@@ -73,4 +73,4 @@ def packet_callback(packet):
 print("Iniciando IDS...")
 sniff(prn=packet_callback, store=0)
 
-hola hola caracola
+hola hola cara
