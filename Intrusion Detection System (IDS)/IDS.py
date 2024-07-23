@@ -53,7 +53,7 @@ def detect_suspicious_activity(packet):
                 if len(failed_login_attempts[ip_src]) > brute_force_threshold:
                     print(f"Alerta: posible ataque brute force detectado desde {ip_src}")
 
-            # Regla: Detección de payloads sospechosos
+            # Regla: Detección de payloads sospechosos.
             if any(payload in bytes(packet[TCP].payload) for payload in known_attack_payloads):
                 print(f"Alerta: payload sospechoso detectado desde {ip_src} hacia {ip_dst}:{tcp_dport}")
 
@@ -61,7 +61,7 @@ def detect_suspicious_activity(packet):
             udp_sport = packet[UDP].sport
             udp_dport = packet[UDP].dport
             
-            # Regla: Detectar tráfico DNS
+            # Regla: Detectar tráfico DNS.
             if udp_dport == 53:
                 print(f"Alerta: tráfico DNS detectado desde {ip_src}:{udp_sport} hacia {ip_dst}:{udp_dport}")
 
@@ -69,6 +69,6 @@ def detect_suspicious_activity(packet):
 def packet_callback(packet):
     detect_suspicious_activity(packet)
 
-# Iniciar la captura de paquetes
+# Iniciar la captura de paquetes.
 print("Iniciando IDS...")
 sniff(prn=packet_callback, store=0)
