@@ -6,7 +6,7 @@ from scapy.all import sniff, IP, TCP, UDP
 from collections import defaultdict
 import time
 
-# Variables para detección de escaneo de puertos
+# Variables para detección de escaneo de puertos.
 port_scan_threshold = 10  # Número de puertos a los que se puede conectar una IP en un intervalo de tiempo
 port_scan_time_window = 60  # Intervalo de tiempo en segundos
 connection_attempts = defaultdict(list)
