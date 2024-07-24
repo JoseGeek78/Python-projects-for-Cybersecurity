@@ -45,7 +45,7 @@ def detect_suspicious_activity(packet):
                 print(f"Alerta: posible escaneo de puertos detectado desde {ip_src}")
 
             # Regla: Detección de ataques brute force (suponiendo que se detectan intentos fallidos de conexión)
-            # Aquí solo como ejemplo, en un caso real necesitarías integrarte con un sistema de autenticación.
+            # Aquí solo como ejemplo, en un caso real necesitarías integrarte con un sistema de autenticación
             if "failed login" in str(packet):
                 failed_login_attempts[ip_src].append(current_time)
                 failed_login_attempts[ip_src] = [t for t in failed_login_attempts[ip_src] if current_time - t < brute_force_time_window]
