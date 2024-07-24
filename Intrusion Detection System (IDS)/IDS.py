@@ -12,7 +12,7 @@ port_scan_time_window = 60  # Intervalo de tiempo en segundos
 connection_attempts = defaultdict(list)
 
 # Variables para detección de ataques brute force.
-brute_force_threshold = 5  # Número de intentos fallidos de conexión.
+brute_force_threshold = 5  # Número de intentos fallidos de conexión
 brute_force_time_window = 60  # Intervalo de tiempo en segundos
 failed_login_attempts = defaultdict(list)
 
