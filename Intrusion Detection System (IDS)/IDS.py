@@ -32,7 +32,7 @@ def detect_suspicious_activity(packet):
             tcp_sport = packet[TCP].sport
             tcp_dport = packet[TCP].dport
             
-            # Regla: Detectar tráfico HTTP/HTTPS.
+            # Regla: Detectar tráfico HTTP/HTTPS
             if tcp_dport in [80, 443]:
                 print(f"Alerta: tráfico HTTP/HTTPS detectado desde {ip_src}:{tcp_sport} hacia {ip_dst}:{tcp_dport}")
             
