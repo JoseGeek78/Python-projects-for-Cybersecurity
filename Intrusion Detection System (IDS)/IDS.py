@@ -36,7 +36,7 @@ def detect_suspicious_activity(packet):
             if tcp_dport in [80, 443]:
                 print(f"Alerta: tráfico HTTP/HTTPS detectado desde {ip_src}:{tcp_sport} hacia {ip_dst}:{tcp_dport}")
             
-            # Regla: Detección de escaneo de puertos.
+            # Regla: Detección de escaneo de puertos
             current_time = time.time()
             connection_attempts[ip_src].append(current_time)
             connection_attempts[ip_src] = [t for t in connection_attempts[ip_src] if current_time - t < port_scan_time_window]
