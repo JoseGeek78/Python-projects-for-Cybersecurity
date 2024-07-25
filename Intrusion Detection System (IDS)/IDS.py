@@ -53,7 +53,7 @@ def detect_suspicious_activity(packet):
                 if len(failed_login_attempts[ip_src]) > brute_force_threshold:
                     print(f"Alerta: posible ataque brute force detectado desde {ip_src}")
 
-            # Regla: Detección de payloads sospechosos.
+            # Regla: Detección de payloads sospechosos
             if any(payload in bytes(packet[TCP].payload) for payload in known_attack_payloads):
                 print(f"Alerta: payload sospechoso detectado desde {ip_src} hacia {ip_dst}:{tcp_dport}")
 
