@@ -61,11 +61,11 @@ def detect_suspicious_activity(packet):
             udp_sport = packet[UDP].sport
             udp_dport = packet[UDP].dport
             
-            # Regla: Detectar tráfico DNS
+            # Regla: Detectar tráfico DNS.
             if udp_dport == 53:
                 print(f"Alerta: tráfico DNS detectado desde {ip_src}:{udp_sport} hacia {ip_dst}:{udp_dport}")
 
-# Función de captura de paquetes
+# Función de captura de paquetes.
 def packet_callback(packet):
     detect_suspicious_activity(packet)
 
