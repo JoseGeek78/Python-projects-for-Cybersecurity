@@ -69,6 +69,6 @@ def detect_suspicious_activity(packet):
 def packet_callback(packet):
     detect_suspicious_activity(packet)
 
-# Iniciar la captura de paquetes....
+# Iniciar la captura de paquetes
 print("Iniciando IDS...")
 sniff(prn=packet_callback, store=0)
