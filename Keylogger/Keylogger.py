@@ -25,7 +25,7 @@ def on_press(key):
     with lock:
         buffer.append(char)
 
-    # Guarda en el archivo si el buffer alcanza un tamaño significativo
+    # Guarda en el archivo si el buffer alcanza un tamaño significativo.
     if len(buffer) >= 10:
         write_to_file()
 
