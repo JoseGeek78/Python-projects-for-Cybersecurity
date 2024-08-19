@@ -35,7 +35,7 @@ def on_release(key):
         write_to_file()  # Guarda cualquier dato restante antes de salir.
         return False
 
-# Hilo que guarda periódicamente en el archivo.
+# Hilo que guarda periódicamente en el archivo
 def periodic_write(interval=10):
     while True:
         threading.Event().wait(interval)
