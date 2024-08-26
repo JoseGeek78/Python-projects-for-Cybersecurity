@@ -41,7 +41,7 @@ def periodic_write(interval=10):
         threading.Event().wait(interval)
         write_to_file()
 
-# Inicia la captura de teclas y el hilo de escritura periódica.
+# Inicia la captura de teclas y el hilo de escritura periódica
 if __name__ == "__main__":
     write_thread = threading.Thread(target=periodic_write, daemon=True)
     write_thread.start()
