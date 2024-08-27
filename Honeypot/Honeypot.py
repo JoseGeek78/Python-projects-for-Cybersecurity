@@ -4,11 +4,11 @@ import socket
 import threading
 import logging
 
-# Configuración del logging
+# Configuración del logging.
 logging.basicConfig(filename='honeypot.log', level=logging.INFO, 
                     format='%(asctime)s - %(message)s')
 
-# Clase para el Honeypot
+# Clase para el Honeypot.
 class Honeypot:
     def __init__(self, host='0.0.0.0', port=2222):
         self.host = host
