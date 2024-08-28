@@ -1,4 +1,4 @@
-# pip install paramiko.
+# pip install paramiko
 
 import socket
 import threading
