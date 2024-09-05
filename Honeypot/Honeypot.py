@@ -4,7 +4,7 @@ import socket
 import threading
 import logging
 
-# Configuración del logging.jk
+# Configuración del logging.
 logging.basicConfig(filename='honeypot.log', level=logging.INFO, 
                     format='%(asctime)s - %(message)s')
 
