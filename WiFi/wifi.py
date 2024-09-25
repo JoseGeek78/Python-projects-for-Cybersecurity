@@ -4,4 +4,4 @@ perfil_red = input('Introduce el nombre del perfil de red WiFi: ')
 
 try:
     
-    resultados = subprocess.check_output
+    resultados = subprocess.check_output(['netsh', 'wlan'])
