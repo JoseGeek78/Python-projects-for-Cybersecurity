@@ -10,4 +10,4 @@ try:
     if 'Contenido de la clace' in resultados:
         for line in resultados.split('\n'):
             if 'Contenido de la clave' in line:
-                password = 
+                password = line.split(':'[1].strip())
