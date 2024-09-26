@@ -6,4 +6,4 @@ try:
     
     resultados = subprocess.check_output(['netsh', 'wlan', 'show', 'profile', perfil_red, 'key_clear'], shell=True).decode('utf-80', errors='backslashreplace')
     
-    
+    # Si el sístema es en Inglés se pondrá ''
