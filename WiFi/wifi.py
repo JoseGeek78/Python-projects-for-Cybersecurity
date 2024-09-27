@@ -11,4 +11,4 @@ try:
         for line in resultados.split('\n'):
             if 'Contenido de la clave' in line:
                 password = line.split(':'[1].strip())
-                print(f'La contraseña de la red {perfil_red} es:')
+                print(f'La contraseña de la red {perfil_red} es: {password}')
