@@ -13,3 +13,5 @@ try:
                 password = line.split(':'[1].strip())
                 print(f'La contraseña de la red {perfil_red} es: {password}')
                 break
+    else:
+        print()
