@@ -17,4 +17,4 @@ try:
         print(f'no se pudo encontrar la contraseña para la red {perfil_red}')
         
 except subprocess.CalledProcessError:
-    print(f'No se pudo ')
+    print(f'No se pudo obtener la información del perfil {perfil_red}')
