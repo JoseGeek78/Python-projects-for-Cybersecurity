@@ -14,4 +14,4 @@ try:
                 print(f'La contraseña de la red {perfil_red} es: {password}')
                 break
     else:
-        print()
+        print(f'no se pudo encontrar la contraseña para la red {}')
