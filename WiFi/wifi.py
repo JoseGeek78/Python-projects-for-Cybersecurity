@@ -14,4 +14,6 @@ try:
                 print(f'La contraseña de la red {perfil_red} es: {password}')
                 break
     else:
-        print(f'no se pudo encontrar la contraseña para la red {}')
+        print(f'no se pudo encontrar la contraseña para la red {perfil_red}')
+        
+except subprocess.CalledProcessError:
