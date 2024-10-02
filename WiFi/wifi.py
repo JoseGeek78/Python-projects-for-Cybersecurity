@@ -18,3 +18,4 @@ try:
         
 except subprocess.CalledProcessError:
     print(f'No se pudo obtener la información del perfil {perfil_red}')
+    .....
