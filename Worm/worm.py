@@ -6,5 +6,3 @@ if len(sys.argv) == 2:
         shutil.copy(sys.argv[0], sys.argv[0] + f'{num}.py')
 else:
     print('Envía dos parámetros')
-    
-    ...
