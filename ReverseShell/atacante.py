@@ -30,4 +30,4 @@ while estado:
         respuesta = client_socket.recv(4096)
 
         # Imprimimos la respuesta;
-        print(respuesta.decode()) 
+        print(respuesta.decode())
