@@ -45,4 +45,4 @@ while estado:
         client_socket.send(salida.encode())
     
     sleep(0.1)
-    ---
+    --ooojpk
